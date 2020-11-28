@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles-special.css" />
     <title>QUIZ APP</title>
 
     <!--
@@ -18,21 +20,22 @@ https://templatemo.com/tm-530-mini-profile
 </head>
 
 <body>
-
-
-
-
     <!-- Welcome Section -->
-    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/about/college.jpeg">
+
         <div class="container-fluid tm-brand-container-outer">
             <div class="row">
                 <div class="col-12">
                     <!-- Logo Area -->
                     <!-- Black transparent bg -->
+
                     <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
                         <div class="tm-brand-container text-center">
-                            <h1 class="tm-brand-name">QUIZ APPLICATION</h1>
-                            <p class="tm-brand-description mb-0">Vasavi College of Engineering</p>
+                            <img src="img/logo.jpg" height=100 width=100 alt="VASAVI COLLEGE OF ENGINEERING" />
+                            <h2 class="tm-brand-name">Vasavi College of Engineering</h1>
+                                <p class="tm-brand-description mb-0">(Private Un-aided Non-minority Autonomous Institution)</p>
+                                <br>
+                                <p class="tm-brand-description mb-0">Affiliated to Osmania University and Approved by AICTE.</p>
                         </div>
                     </div>
                 </div>
@@ -40,24 +43,53 @@ https://templatemo.com/tm-530-mini-profile
         </div>
 
         <div class="tm-bg-white-transparent tm-welcome-container">
+
             <div class="container-fluid">
+                <div class="row">
+
+                </div>
                 <div class="row h-100">
                     <!-- Welcome Text -->
                     <!-- White transparent bg -->
                     <div class="col-md-7 tm-welcome-left-col">
                         <div class="tm-welcome-left">
-                            <h2 class="tm-welcome-title">Welcome to Quiz</h2>
+                            <h2 class="tm-welcome-title">Vasavi College of Engineering</h2>
                             <p class="pb-0">
-                                Students need to login and write the exam </p>
-                            <a href="studentlogin.html" class="btn btn-primary">Student</a>
-                            <a href="lecturerlogin.html" class="btn btn-primary">Lecturer</a>
+                                Our Vision <br>"Striving for a symbiosis of technological excellence and human values." <br>Our Mission<br> "To arm young brains with competitive technology and nurture holistic development of the individuals for a better
+                                tomorrow."
+                            </p>
+                            <form action="#" id="loginForm" method="post">
+                                <div class="header-wrapper">
+                                    <h2 style="font-weight:bold;">Student/Parent Login</h2><span></span>
+                                    <div class="clear"></div>
+                                </div>
+
+
+                                <input type="text" onblur="if (this.value == '')this.value = 'LoginID';" onfocus="if (this.value == 'LoginID')this.value = '';" value="LoginID" id="LoginID" name="LoginID" class="text-input">
+                                <input type="password" onblur="if (this.value == '')this.value = 'PassWord';" onfocus="if (this.value == 'Password')this.value = '';" value="Password" id="Password" name="Password" class="text-input">
+                                <span class="field-validation-valid" data-valmsg-for="LoginID" data-valmsg-replace="true"></span>
+                                <span class="field-validation-valid" data-valmsg-for="PassWord" data-valmsg-replace="true"></span>
+                                <input type="submit" value="Login" class="button field">
+
+                            </form>
                         </div>
                     </div>
                     <!-- Brown bg -->
                     <div class="col-md-5">
                         <div class="tm-welcome-right">
                             <p class="mb-0">
-                                <img src="img/logo.jpg" height=300 width=300 alt="VASAVI COLLEGE OF ENGINEERING" />
+                                <h4>News and Announcements:</h4>
+                                <ul>
+                                    <li>
+                                        TWO WEEK ONLINE STUDENT INDUCTION PROGRAM FOR B.E FIRST YEAR (ACADEMIC YEAR 2020-21) DAY-WISE SCHEDULE
+                                    </li>
+                                    <li>
+                                        B.E. FIRST YEAR TWO WEEK STUDENT INDUCTION PROGRAM (SIP) 2020-2021 : DETAILS OF THE RESOURCE PERSON
+                                    </li>
+                                    <li>
+                                        SPOT ADMISSIONS: I YEAR B.E. TSEAMCET -2020 VACANCY POSITION
+                                    </li>
+                                </ul>
                             </p>
                         </div>
                     </div>
@@ -66,7 +98,42 @@ https://templatemo.com/tm-530-mini-profile
         </div>
     </section>
     <!-- End Welcome section -->
+    <div class="container">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides ">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/carousel/Slide_001.jpeg" width=100% height=400>
+
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/carousel//Slide_04.jpg" width=100% height=400>
+
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/carousel/Slide_05.jpg" width=100% height=400>
+
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
     <!-- Portfolio section -->
     <section id="tmPortfolio">
         <div class="container-fluid">
@@ -74,48 +141,87 @@ https://templatemo.com/tm-530-mini-profile
                 <div class="col-12">
                     <div class="tm-portfolio-item">
                         <div class="tm-portfolio-name text-white tm-bg-green">
-                            Database Management Systems
+                            Computer Science Enginerring
                         </div>
                         <div class="tm-portfolio-description">
                             <h3 class="tm-text-green">
-                                DBMS
-                                <span class="tm-title-small">(3 credit)</span>
+                                CSE
                             </h3>
                             <p class="mb-0">
-                                Database Management System (DBMS) is a software for storing and retrieving users' data while considering appropriate security measures.
+                                BE and ME
                             </p>
                         </div>
                     </div>
 
                     <div class="tm-portfolio-item">
-                        <div class="tm-portfolio-name text-white tm-bg-orange">
-                            Web programming and services
+                        <div class="tm-portfolio-name text-white tm-bg-green">
+                            Civil Enginerring
                         </div>
                         <div class="tm-portfolio-description">
-                            <h3 class="tm-text-orange">
-                                WPS
-                                <span class="tm-title-small"></span>(3 credit)</span>
+                            <h3 class="tm-text-green">
+                                CIVIL
                             </h3>
                             <p class="mb-0">
-                                The World Wide Web, commonly known as the Web, is an information system where documents and other web resources
+                                BE and ME
                             </p>
                         </div>
                     </div>
 
                     <div class="tm-portfolio-item">
-                        <div class="tm-portfolio-name text-white tm-bg-blue">
-                            Computer Networks
+                        <div class="tm-portfolio-name text-white tm-bg-green">
+                            Electronics and Communication Enginerring
                         </div>
                         <div class="tm-portfolio-description">
-                            <h3 class="tm-text-blue">
-                                CN
-                                <span class="tm-title-small">(3 credit)</span>
+                            <h3 class="tm-text-green">
+                                ECE
                             </h3>
                             <p class="mb-0">
-                                Computer Networks is an international, archival journal providing a publication vehicle for complete coverage of all topics of interest to those involved in the computer communications networking area. </p>
+                                BE and ME
+                            </p>
                         </div>
                     </div>
 
+                    <div class="tm-portfolio-item">
+                        <div class="tm-portfolio-name text-white tm-bg-green">
+                            Electrical and Electronics Enginerring
+                        </div>
+                        <div class="tm-portfolio-description">
+                            <h3 class="tm-text-green">
+                                EEE
+                            </h3>
+                            <p class="mb-0">
+                                BE and ME
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tm-portfolio-item">
+                        <div class="tm-portfolio-name text-white tm-bg-green">
+                            Mechanical Enginerring
+                        </div>
+                        <div class="tm-portfolio-description">
+                            <h3 class="tm-text-green">
+                                MECH
+                            </h3>
+                            <p class="mb-0">
+                                BE and ME
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tm-portfolio-item">
+                        <div class="tm-portfolio-name text-white tm-bg-green">
+                            Information Technology Enginerring
+                        </div>
+                        <div class="tm-portfolio-description">
+                            <h3 class="tm-text-green">
+                                IT
+                            </h3>
+                            <p class="mb-0">
+                                BE and ME
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,8 +280,7 @@ https://templatemo.com/tm-530-mini-profile
             <!-- row -->
             <div class="row">
                 <footer class="col-12">
-                    <p class="text-center tm-copyright-text">
-                        Copyright 2020 @VCE Quiz</p>
+
                 </footer>
             </div>
         </div>
@@ -219,6 +324,38 @@ https://templatemo.com/tm-530-mini-profile
                 setBrandMarginTop();
             });
         });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
     </script>
 </body>
 
